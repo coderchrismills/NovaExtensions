@@ -1,0 +1,12 @@
+**Todo.txt** provides syntax highlighting for the [**todo.txt**](https://github.com/todotxt/todo.txt) markup format.
+
+![Example highlighting](./Images/extension/todo-txt-syntax-highlight.png)
+
+## Syntax Supported
+
+- Priority
+- Dates
+- Due dates
+- Project
+- Context
+- Done

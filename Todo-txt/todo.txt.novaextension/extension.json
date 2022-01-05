@@ -1,0 +1,8 @@
+{
+    "identifier": "org.todotxt",
+    "name": "todo.txt",
+    "organization": "MyOrganization",
+    "description": "Syntax highlighter for the todo.txt format.",
+    "version": "1.0",
+    "categories": ["languages"]
+}

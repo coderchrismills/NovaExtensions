@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax name="todo">
+    <meta>
+        <name>Todo.txt</name>
+        <type>markup</type>
+        <preferred-file-extension>txt</preferred-file-extension>
+    </meta>
+
+    <detectors>
+        <extension priority="1.0">todo</extension>
+    </detectors>
+    
+    <scopes>
+        <include syntax="self" collection="definitions" />
+    </scopes>
+
+    <collections>
+        <collection name="definitions">
+            <scope name="todo.project">
+                <expression>(\+\w+)</expression>
+                <capture number="1" name="todo.keyword.construct" />
+            </scope>
+            
+            <scope name="todo.context">
+                <expression>(@\w+)</expression>
+                <capture number="1" name="todo.identifier.method" />
+            </scope>
+            
+            <scope name="todo.date">
+                <expression>([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])</expression>
+                <capture number="1" name="todo.string.singleline" />
+            </scope>
+            
+            <scope name="todo.duedate">
+                <expression>(due)\:([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9])</expression>
+                <capture number="1" name="todo.identifier.argument" />
+                <capture number="2" name="todo.value.number" />
+            </scope>
+
+            <scope name="todo.priority">
+                <expression>(^\([A-Z]\))</expression>
+                <capture number="1" name="todo.identifier.function.name" />
+            </scope>
+            
+            <scope name="todo.done">
+                <expression>(^x\s+.*)</expression>
+                <capture number="1" name="todo.comment" />
+            </scope>
+            
+        </collection>
+    </collections>
+</syntax>
