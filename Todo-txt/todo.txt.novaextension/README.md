@@ -1,6 +1,6 @@
 **Todo.txt** provides syntax highlighting for the [**todo.txt**](https://github.com/todotxt/todo.txt) markup format.
 
-![Example highlighting](./Images/extension/todo-txt-syntax-highlight.png)
+![Example highlighting](https://github.com/coderchrismills/NovaExtensions/raw/main/Todo-txt/todo.txt.novaextension/Images/extension/todo-txt-syntax-highlight.png)
 
 ## Syntax Supported
 

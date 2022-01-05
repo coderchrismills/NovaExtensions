@@ -1,7 +1,11 @@
 {
-    "identifier": "org.todotxt",
+    "identifier": "coderchrismills.todotxt",
     "name": "todo.txt",
+    "vendor": "Chris Mills",
+    "organization": "Chris Mills",
     "description": "Syntax highlighter for the todo.txt format.",
     "version": "1.0",
-    "categories": ["languages"]
+    "categories": ["languages"],
+    "bugs":"https://github.com/coderchrismills/NovaExtensions/issues",
+    "repository":"https://github.com/coderchrismills/NovaExtensions/tree/main/Todo-txt/todo.txt.novaextension"
 }
